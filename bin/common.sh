@@ -11,7 +11,7 @@ install_binary() {
     [ "$(uname -m)" = arm64 ] && wget -O "$name" "$arm_url"
 
     chmod +x "./${name}"
-    mv "./${name}" "${d}/bin/"
+    mv "./${name}" "${d}/../bin/"
 }
 
 kind() {
